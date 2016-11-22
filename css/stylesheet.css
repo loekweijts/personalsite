@@ -5,7 +5,10 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 
-img {
+
+
+
+.row img {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -14,6 +17,10 @@ img {
 }
 
 
+.row {
+  margin: 0 5px 0 5px;
+}
+
 
 p {
   font-size: 1em;
@@ -21,7 +28,7 @@ p {
 }
 
 h1 {
-  margin-left: 14px;
+  margin: 70px 0 30px 14px;
   font-size: 4em;
   color: #194358;
 
@@ -66,19 +73,22 @@ h5.a:hover {
 }
 
 /* BREADCRUMB */
-ul.bread {
-  padding-left: 0px;
-  width: 340px;
-  top: 10px;
-  position: fixed;
+
+.crumb {
+  padding-top: 10px;
 }
 
-.bread li {
-  color: #000;
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 5px 5px 10px;
+.left {
+  float: left;
+  font-size: 1.3em;
 }
+
+.right {
+  float: right;
+  font-size: 1.3em;
+
+}
+
 
 /* CLASSES */
 
@@ -144,7 +154,7 @@ ul.bread {
 }
 
 .nav-height {
-  margin-top: 12px;
+  margin-top: 0px;
   height: 140px;
 }
 
@@ -220,7 +230,7 @@ ul.menu {
 }
 
 .menu li:hover {
-  transition: background-color 1.5s ease;
+  transition: background-color .5s ease;
   background-color: black;
   cursor: pointer;
 }
@@ -245,9 +255,11 @@ ul.menu {
                color:rgba(255,255,255,.85);
                font-size:96px;}
 
+.onderschaduw {
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1), 0 6px 20px -6px rgba(0, 0, 0, 0.1);
+}
 
 /* CONTENT */
 .inhoud {
-  margin-top: 220px;
-  height: auto;
+  margin-top: 190px;
 }

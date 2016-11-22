@@ -1,0 +1,253 @@
+/* ALGEMENE STYLING */
+body {
+  background-color: #5bcbf5;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+}
+
+img {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+
+}
+
+
+
+p {
+  font-size: 1em;
+  line-height: 1.7em;
+}
+
+h1 {
+  margin-left: 14px;
+  font-size: 4em;
+  color: #194358;
+
+}
+
+h2 { /* tussenkop */
+  font-size: 1.4em;
+  color: #009ad1;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+h3 { /* subkop */
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 0px;
+}
+
+h5 {
+  font-size: 1em;
+  padding: 10px 10px 10px 10px;
+  margin: 0px;
+  position: fixed;
+  background-color: black;
+
+}
+
+h5.a {
+  background-color: black;
+  color: #ddd;
+  text-decoration: none;
+}
+
+h5.a:hover {
+    background-color: black;
+  color: #000;
+  text-decoration: underline;
+}
+
+.centreer {
+  margin: 0 auto;
+}
+
+/* BREADCRUMB */
+ul.bread {
+  padding-left: 0px;
+  width: 340px;
+  top: 10px;
+  position: fixed;
+}
+
+.bread li {
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 5px 5px 10px;
+}
+
+/* CLASSES */
+
+.donkerblauw {
+  color: #194358;
+}
+
+.oranje {
+  color: #e7611b;
+}
+
+.blue {
+  background-color: #5bcbf5;
+}
+
+.back-donkerblauw {
+  background-color: #194358;
+
+}
+
+
+
+.grijs {
+  background-color: #effaff;
+}
+
+.white {
+  background-color: white;
+}
+
+/* LOGO KLEIN ON SCROLL */
+.navbar.smaller img.logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar.smaller div.nav-height {
+  height: 50px;
+  position: relative;;
+}
+
+.navbar.smaller div.inner-container {
+  padding-top: 0px;
+  border: none;
+}
+
+/*.inner-container {
+  margin: 0 20px;
+  padding-top: 20px;
+  background-color: #fff;
+  /*border-bottom: 4px solid #a5dff9;*/
+
+
+
+
+/* FONTS */
+
+/* HEADER ELEMENTEN */
+.navbar {
+  /*height: 80px; */
+  border: none;
+}
+
+.nav-height {
+  margin-top: 12px;
+  height: 140px;
+}
+
+.logo {
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+
+/*.naam,
+.functie {
+  margin-top: 30px;
+  display: block;
+  width: 260px;
+}
+
+.naam {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+}*/
+
+/* MENU */
+ul.menu {
+  padding-left: 0px;
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+
+.menu li {
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #009ad1;
+  margin-right: -4px;
+  padding: 5px 15px;
+}
+
+.menu li:first-child {
+    width: 110px;
+  border-radius: 8px 0px 0px 8px;
+  border-right: 7px solid #194358;
+
+}
+
+.menu li:nth-child(2) {
+  width: 110px;
+  background-color: #e7611b;
+  border-right: 6px solid #194358;
+}
+
+.menu li:nth-child(3) {
+  width: 110px;
+  background-color: #f08d22;
+}
+
+.menu li:last-child {
+  border-left: 6px solid #194358;
+
+  width: 110px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #5bcbf5;
+  padding-right: 22px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  transition: background-color 1.5s ease;
+  background-color: black;
+  cursor: pointer;
+}
+/* OVERLAY IMAGES */
+
+
+.overlay {
+  background:rgba(0,0,0,.75);
+  text-align:center;
+  padding:45px 0 66px 0;
+  opacity:0;
+  transition: opacity .25s ease;
+}
+
+
+.box:hover .overlay {
+  opacity:1;
+}
+
+.plus {  font-family:Helvetica;
+               font-weight:900;
+               color:rgba(255,255,255,.85);
+               font-size:96px;}
+
+
+/* CONTENT */
+.inhoud {
+  margin-top: 220px;
+  height: auto;
+}

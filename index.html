@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Infographics | Loek Weijts</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+
+
+    <!-- js -->
+    <script src="js/classie.js"></script>
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e){
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 50,
+                    nav = document.querySelector("nav");
+                if (distanceY > shrinkOn) {
+                    classie.add(nav,"smaller");
+                } else {
+                    if (classie.has(nav,"smaller")) {
+                        classie.remove(nav,"smaller");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+    </script>
+
+  </head>
+
+  <body>
+
+
+     <nav class="navbar navbar-fixed-top blue">
+      <div class="container white">
+        <div class="nav-height">
+
+            <img class="logo centreer" src="img/loek-weijts-logo.svg">
+            <ul class="bread">
+              <li><a class="donkerblauw" href="#">Loek Weijts</a> | <a class="oranje" href="#">Infographics</a> | <a href="#">Portfolio</a> |</li>
+            </ul>
+
+        </div>
+      </div>
+
+      <div class="container white">
+        <ul class="menu">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Werkwijze</a></li>
+          <li><a href="#">Klanten</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container grijs" style="z-index: 0;">
+
+      <div class="inhoud">
+        <h1>Portfolio</h1>
+        <div class="col-md-6"><h3>Ministerie van Infrastructuur en Milieu</h3><h2>Omgevingswet</h2>
+
+          <div class="hovereffect">
+
+        <img src="img/infographics/ig-omgevingswet-4-verbeterpunten-v3.jpg">
+        <div class="overlay">
+          <h2>Zoom in</h2>
+        </div>
+        </div>
+
+      </div>
+
+        <div class="col-md-6 "><h3>Alliander</h3><h2>Het e-net</h2>
+
+            <img class="effect2" src="img/infographics/ig-middenspanningsnet.jpg">
+
+      </div>
+
+        <!-- <div class="col-md-4"><h3>VGZ</h3><h2>Zorg inkopen</h2>
+        <img src="img/infographics/ig-blockbuster.jpg"><p>Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een pagina, afgeleid wordt door de tekstuele inhoud. </p>
+        </div> -->
+
+
+      </div>
+
+    </div>
+
+
+
+    <div class="container grijs">
+        <div class="col-md-4"><h3>Ministerie van Infrastructuur en Milieu</h3><h2>Omgevingswet</h2>
+          <img src="img/infographics/ig-omgevingswet-4-verbeterpunten-v3.jpg">
+        
+      </div>
+
+        <div class="col-md-4"><h3>Alliander</h3><h2>Het e-net</h2>
+        <img src="img/infographics/ig-middenspanningsnet.jpg">
+        </div>
+
+        <div class="col-md-4"><h3>VGZ</h3><h2>Zorg inkopen</h2>
+        <img src="img/infographics/ig-blockbuster.jpg">
+        </div>
+
+
+    </div>
+
+    <div class="container back-donkerblauw">Footer <br></div>
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
